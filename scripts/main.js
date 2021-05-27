@@ -64,7 +64,7 @@ function AppelAPI(long, lat) {
 
         // température pour 3h 
         for(let j = 0; j < tempPourH.length; j++) {
-            tempPourH[j].innerText = `${Math.trunc(resultatsAPI.hourly[j * 3].temp)}°`
+            tempPourH[j].innerText = `${Math.trunc(resultatsAPI.hourly[j * 3].temp)}°C`
         }
 
         // trois premières lettres des jours
@@ -77,7 +77,7 @@ function AppelAPI(long, lat) {
         // température par jour
 
         for(let m = 0; m < 7; m++) {
-            tempJoursDiv[m].innerText = `${Math.trunc(resultatsAPI.daily[m + 1].temp.day)}°`
+            tempJoursDiv[m].innerText = `${Math.trunc(resultatsAPI.daily[m + 1].temp.day)}°C`
         }
 
         // Icone dynamique
