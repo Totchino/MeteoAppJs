@@ -40,7 +40,7 @@ function AppelAPI(long, lat) {
         resultatsAPI = data;
 
         temps.innerText = resultatsAPI.current.weather[0].description;
-        température.innerText = `${Math.trunc(resultatsAPI.current.temp)}°`;
+        température.innerText = `${Math.trunc(resultatsAPI.current.temp)}°C`;
         localisation.innerText = resultatsAPI.timezone;
 
 
